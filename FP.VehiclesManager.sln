@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Application", "1. Application", "{D34E42FE-C1DA-4E83-911A-C941C5BD67D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{2DFB0832-F8FD-48F7-A52B-C3A2D78B9E84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure", "3. Infrastructure", "{9920D0A8-DB39-4262-84C2-0032E52F7917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Dtos", "4. Dtos", "{0E21C428-DC9D-4056-8284-07E6C1A3E08A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Application", "FP.VehiclesManager.Application\FP.VehiclesManager.Application.csproj", "{37EC0A27-7616-4A40-AE79-C611F217516D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8} = {68256885-44D2-42DE-AD2A-D61E84FF62C8}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Business.Contracts", "FP.VehiclesManager.Business.Contracts\FP.VehiclesManager.Business.Contracts.csproj", "{C194B712-DDD7-4B40-92D7-15A5D30F044E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Business.Impl", "FP.VehiclesManager.Business.Impl\FP.VehiclesManager.Business.Impl.csproj", "{68256885-44D2-42DE-AD2A-D61E84FF62C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9} = {86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Infrastructure.Contracts", "FP.VehiclesManager.Infrastructure.Contracts\FP.VehiclesManager.Infrastructure.Contracts.csproj", "{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Infrastructure.Impl", "FP.VehiclesManager.Infrastructure.Impl\FP.VehiclesManager.Infrastructure.Impl.csproj", "{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B} = {F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FP.VehiclesManager.Dtos", "FP.VehiclesManager.Dtos\FP.VehiclesManager.Dtos.csproj", "{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37EC0A27-7616-4A40-AE79-C611F217516D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EC0A27-7616-4A40-AE79-C611F217516D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EC0A27-7616-4A40-AE79-C611F217516D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EC0A27-7616-4A40-AE79-C611F217516D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C194B712-DDD7-4B40-92D7-15A5D30F044E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C194B712-DDD7-4B40-92D7-15A5D30F044E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C194B712-DDD7-4B40-92D7-15A5D30F044E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C194B712-DDD7-4B40-92D7-15A5D30F044E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37EC0A27-7616-4A40-AE79-C611F217516D} = {D34E42FE-C1DA-4E83-911A-C941C5BD67D2}
+		{C194B712-DDD7-4B40-92D7-15A5D30F044E} = {2DFB0832-F8FD-48F7-A52B-C3A2D78B9E84}
+		{68256885-44D2-42DE-AD2A-D61E84FF62C8} = {2DFB0832-F8FD-48F7-A52B-C3A2D78B9E84}
+		{F2A25C81-A9DF-4A4B-A421-0C0ED95ABD3B} = {9920D0A8-DB39-4262-84C2-0032E52F7917}
+		{86AE8C2A-BA63-4434-8EC2-C9DB49D72DB9} = {9920D0A8-DB39-4262-84C2-0032E52F7917}
+		{D2E22BF0-CD08-4110-BC31-66BB5BA7CEA7} = {0E21C428-DC9D-4056-8284-07E6C1A3E08A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70BC1CC6-73CE-4F8E-8E3A-FB08F4FCE5C5}
+	EndGlobalSection
+EndGlobal
