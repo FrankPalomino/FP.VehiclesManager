@@ -1,0 +1,51 @@
+-- Crear la base de datos
+CREATE DATABASE VehiclesManager;
+GO
+
+-- Usar la base de datos recién creada
+USE VehiclesManager;
+GO
+
+-- Crear la tabla Users
+CREATE TABLE Users (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    surname VARCHAR(50),
+    dni VARCHAR(10),
+    card VARCHAR(10),
+    phone VARCHAR(10)
+);
+GO
+
+-- Crear la tabla Vehicles
+CREATE TABLE Vehicles (
+    id INT PRIMARY KEY,
+    brand VARCHAR(50),
+    model VARCHAR(50),
+    power VARCHAR(10),
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES Users(id)
+);
+GO
+
+-- Insertar usuarios en la tabla Users
+INSERT INTO Users (id, name, surname, dni, card, phone)
+VALUES
+    (1, 'John', 'Doe', '1234567890', '1234', '1234567890'),
+    (2, 'Jane', 'Smith', '0987654321', '5678', '0987654321'),
+    (3, 'Alice', 'Johnson', '5432167890', '9012', '6789054321');
+GO
+
+-- Insertar vehículos en la tabla Vehicles
+INSERT INTO Vehicles (id, brand, model, power, user_id)
+VALUES
+    (1, 'Toyota', 'Camry', '200', 1),
+    (2, 'Honda', 'Civic', '150', 2),
+    (3, 'Ford', 'Mustang', '300', 3),
+    (4, 'Chevrolet', 'Silverado', '250', 1),
+    (5, 'BMW', 'X5', '300', 2),
+    (6, 'Mercedes-Benz', 'E-Class', '250', 3),
+    (7, 'Audi', 'A4', '190', 1),
+    (8, 'Volkswagen', 'Golf', '130', 2),
+    (9, 'Hyundai', 'Elantra', '150', 3);
+GO
